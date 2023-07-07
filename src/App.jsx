@@ -51,7 +51,7 @@ function App() {
     <>
       <div>
         <Typography variant="h3" align="center">
-          THE INDEGENOUS
+          THE DATA FETCH APP
         </Typography>
         {books.map((book) => (
           <Box height="1%" width="80%" margin="auto" marginY="5%">
