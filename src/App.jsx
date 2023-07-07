@@ -86,11 +86,11 @@ function App() {
                 ></CardMedia>
                 <CardContent>
                   <div key={book.id}>
-                    <Typography gutterBottom variant="h5" component="div" style={{textTransform:"capitalize"}}>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textTransform:"capitalize"}}>
                       {book.title}
                     </Typography>
-                    <Typography variant="body2" style={{textTransform:"capitalize"}}>Category: {book.category}</Typography>
-                    <Typography variant="body2" style={{textTransform:"capitalize"}}>User: {book.user}</Typography>
+                    <Typography gutterBottom variant="body2" sx={{textTransform:"capitalize"}}>Category: {book.category}</Typography>
+                    <Typography gutterBottom variant="body2" sx={{textTransform:"capitalize"}}>User: {book.user}</Typography>
                     <Convert props={book.notes}></Convert>
                   </div>
                 </CardContent>
