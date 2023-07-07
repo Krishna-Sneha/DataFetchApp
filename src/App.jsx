@@ -87,7 +87,7 @@ function App() {
                 <CardContent>
                   <div key={book.id}>
                     <Typography gutterBottom variant="h5" component="div">
-                      <h2>{book.title}</h2>
+                      <h2 style={{textTransform:"capitalize"}}>{book.title}</h2>
                     </Typography>
                     {/* <p>{book.category}</p> */}
                     <Convert props={book.notes}></Convert>
