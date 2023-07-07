@@ -89,7 +89,10 @@ function App() {
                     <Typography gutterBottom variant="h5" component="div">
                       <h2 style={{textTransform:"capitalize"}}>{book.title}</h2>
                     </Typography>
-                    {/* <p>{book.category}</p> */}
+                    <Typography variant="body2">
+                    <p>Category: {book.category}</p>
+                      <p>User: {book.user}</p>
+                    </Typography>
                     <Convert props={book.notes}></Convert>
                   </div>
                 </CardContent>
@@ -97,6 +100,35 @@ function App() {
             </Card>
           </Box>
         ))}
+        <footer class="main_footer">
+   		<ul class="main_footer_links">
+   			<li class="main_footer_link">
+   				<a class="footer-link" href="https://www.linkedin.com/in/krishna-sneha-s-a252b4204/" target="_blank">
+					<img class="accounts" src="linkedinIcon.png" alt="linkedIn" srcset="">
+				</a>
+   			</li>
+  			<li class="main_footer_link">
+  				<a class="footer-link" target="_blank" href="https://github.com/Krishna-Sneha">
+					<img class="accounts" src="githubIcon.png" alt="Github">
+				</a>
+  			</li>
+			  <li class="main_footer_link">
+				<a class="footer-link" target="_blank" href="https://auth.geeksforgeeks.org/user/snehaaes">
+				  <img class="accounts" src="gfgIcon.png" alt="Github">
+			  </a>
+			</li>
+  			<li class="main_footer_link">
+  				<!-- <a class="footer-link" target="_blank" href="https://krishna-sneha.github.io/CV/">CV</a> -->
+  				<a class="footer-link" target="_blank" href="https://drive.google.com/file/d/1DjqJfOwt6vo6YDgXYsk6_w8mhjJMiEbh/view?usp=sharing">
+					<img class="accounts" src="resumeIcon.png" alt="resume" srcset="">
+				</a>
+  			</li>
+  			<li>
+  				<p class="creater">S Krishna Sneha.</p>
+  				<p class="creater">© 2023</p>
+  			</li>
+  		</ul>
+	</footer>
       </div>
     </>
   );
